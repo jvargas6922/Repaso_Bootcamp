@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span {
+        color: blue;
+    }
+</style>
+<body>
+    <h1>hola soy el contenido de la pagina web</h1>
+    <h2>soy el subtitulo</h2>
+    <a href="https://www.google.com/search?q=netflix&oq=netflix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0NzhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+        target="_blank">Enlace</a>
+    <ul>
+        <li>
+            <a href="https://www.google.com/search?q=netflix&oq=netflix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0NzhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                target="_blank">Enlace
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com/search?q=netflix&oq=netflix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0NzhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                target="_blank">Enlace
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com/search?q=netflix&oq=netflix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0NzhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                target="_blank">Enlace
+            </a>
+        </li>
+        <li>
+            <a href="https://www.google.com/search?q=netflix&oq=netflix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU0NzhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                target="_blank">Enlace
+            </a>
+        </li>
+    </ul>
+
+    <table>
+        <thead>
+            <th>columna_1</th>
+            <th>columna_2</th>
+            <th>columna_3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+        <span style="color: red;">Hola soy un span</span>
+        <p>Hola soy un  <span style="color: red;">programador</span></p>
+        <p>hola soy parrafo</p>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <input type="" name="" id="">
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <textarea name="" id="" cols="10" rows="10" maxlength="500" placeholder="Escribe tu mensaje aquí...">
+        
+        </textarea>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script> 
+    // JS puro
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("El DOM ha sido completamente cargado y analizado.");
+        // forma de capturar el valor de un elemento del DOM
+        ele = document.getElementById("h1"); // id
+        ele = document.getElementsByClassName("h1"); // clase
+        ele = document.getElementsByTagName("h1"); // etiqueta
+        
+
+        // forma de capturar el valor de un elemento del DOM con JQuery
+        ele = $("#h1"); // id
+        ele = $(".h1"); // clase
+        ele = $("h1"); // etiqueta
+
+
+        // forma más sencilla de capturar el valor de un elemento del DOM
+        ele = document.querySelector("#h1");// id
+        ele = document.querySelector(".h1");// clase
+        ele = document.querySelector("h1");// etiqueta
+
+
+        // animacion con Jquery
+        // $("h1").click(function () {
+        //     $(this).hide();
+        // });
+        // animacion con Jquery con un tiempo de espera
+        // $("h1").click(function () {
+        //     $(this).hide(1000);
+        // });
+
+        // animacion con JS puro
+        let h1 = document.querySelector("h1"); // mapear el elemento del DOM
+        // h1.addEventListener("click", function () {
+        //     this.style.display = "none";
+        // });
+        // animacion con JS puro con un tiempo de espera
+        h1.addEventListener("click", function () {
+            setTimeout(() => {
+                this.style.display = "none";
+            }, 1000);
+        });
+    });
+</script>
+</body>
+
+</html>
