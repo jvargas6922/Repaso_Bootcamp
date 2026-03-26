@@ -34,3 +34,11 @@ funcion Type:
     Entrada
     Proceso
     Salida
+
+
+    OR(||)
+        Es verdadero si  alguna de las 2 condiciones es verdadera
+        Es falso si ambas condiciones son falsas
+    AND(&&)
+        Es verdadero si ambas condiciones son verdaderas
+        Es falso si alguna de las 2 condiciones es falsa
